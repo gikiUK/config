@@ -4,7 +4,10 @@ aurora_port: 5432
 aurora_database_name: giki_development
 
 # Frontend URL for emails and CORS
-frontend_base_url: http://local.giki.earth:3001
+frontend_base_url: http://local.giki.earth:3011
+
+# Admin URL for CORS
+admin_base_url: http://local.giki.earth:3012
 
 # Cloudflare R2 (uses LocalStack in dev)
 r2_account_id: ""

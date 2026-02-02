@@ -4,7 +4,10 @@ aurora_port: 5432
 aurora_database_name: giki_test
 
 # Frontend URL for emails and CORS
-frontend_base_url: http://localhost:3001
+frontend_base_url: http://localhost:3011
+
+# Admin URL for CORS
+admin_base_url: http://localhost:3012
 
 # Cloudflare R2 (test values)
 r2_account_id: "test-account-id"
