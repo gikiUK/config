@@ -1,0 +1,33 @@
+# Aurora Database
+aurora_endpoint: localhost
+aurora_port: 5432
+aurora_database_name: giki_development
+
+# Frontend URL for emails and CORS
+frontend_base_url: http://local.giki.earth:3001
+
+# Cloudflare R2 (uses LocalStack in dev)
+r2_account_id: ""
+r2_endpoint: "http://localhost:4566"
+r2_bucket_assets: "giki-assets"
+r2_bucket_uploads: "giki-uploads"
+assets_cdn_url: "http://localhost:4566/giki-assets"
+uploads_host: "http://localhost:4566/giki-uploads"
+
+# Stripe Configuration
+stripe_publishable_key: pk_test_xxx
+
+# Email Configuration
+mail_from_email: noreply@giki.earth
+marketing_from_email: hello@giki.earth
+notifications_from_email: notifications@giki.earth
+support_email: support@giki.earth
+
+# SES Configuration Sets
+ses_mail_configuration_set: ""
+ses_marketing_configuration_set: ""
+ses_notifications_configuration_set: ""
+ses_region: eu-west-1
+
+# Sentry Error Tracking (disabled in development)
+sentry_dsn: ""
