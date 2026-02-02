@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jiki-config (0.1.0)
+    giki-config (0.1.0)
       aws-sdk-dynamodb (~> 1.0)
       aws-sdk-secretsmanager (~> 1.0)
       mandate
@@ -56,7 +56,7 @@ GEM
     lint_roller (1.1.0)
     logger (1.7.0)
     mandate (2.2.0)
-    minitest (5.25.5)
+    minitest (5.27.0)
     mocha (2.7.1)
       ruby2_keywords (>= 0.0.5)
     ostruct (0.6.3)
@@ -100,7 +100,7 @@ GEM
     stringio (3.1.7)
     unicode-display_width (3.2.0)
       unicode-emoji (~> 4.1)
-    unicode-emoji (4.1.0)
+    unicode-emoji (4.2.0)
     zeitwerk (2.7.3)
 
 PLATFORMS
@@ -111,8 +111,8 @@ DEPENDENCIES
   aws-sdk-s3
   aws-sdk-sesv2
   bundler (~> 2.1)
+  giki-config!
   irb
-  jiki-config!
   minitest (~> 5.16)
   mocha
   rake (~> 13.0)
