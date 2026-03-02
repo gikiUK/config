@@ -1,4 +1,4 @@
-name: Tests
+name: CI
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  test:
+  ci:
     runs-on: ubuntu-latest
 
     services:
@@ -27,21 +27,24 @@ jobs:
           --health-retries 10
 
     steps:
-      ###
-      # Checkout using GitHub's checkout action
       - uses: actions/checkout@v2
 
-      ###
-      # Setup Ruby - this needs to match the version in the Gemfile
       - name: Set up Ruby
         uses: ruby/setup-ruby@a4effe49ee8ee5b8b5091268c473a4628afb5651
         with:
-          ruby-version: "3.2.1"
+          ruby-version: "4.0.1"
           bundler-cache: true
 
-      ###
-      # Install bundler dependencies
-      - name: Install dependencies
+      - name: Install Rubocop
+        run: |
+          gem install rubocop
+          gem install rubocop-minitest
+          gem install rubocop-performance
+
+      - name: Run Rubocop
+        run: rubocop --except Metrics
+
+      - name: Setup AWS
         env:
           GIKI_ENV: production
           GIKI_CI: true
@@ -50,12 +53,9 @@ jobs:
           bundle exec setup_giki_config
           bundle exec setup_giki_local_aws
 
-      ###
-      # Run the tests
-      - name: Run Ruby tests
+      - name: Run tests
         env:
           GIKI_ENV: production
           GIKI_CI: true
           AWS_PORT: ${{ job.services.aws.ports['4566'] }}
-        run: |
-          bundle exec rake test
+        run: bundle exec rake test
