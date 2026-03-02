@@ -34,3 +34,6 @@ ses_region: eu-west-1
 
 # Sentry Error Tracking (disabled in development)
 sentry_dsn: ""
+
+# Legacy API
+legacy_api_base_url: https://api-actions.giki.earth
