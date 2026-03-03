@@ -36,4 +36,4 @@ ses_region: eu-west-1
 sentry_dsn: ""
 
 # Legacy API
-legacy_api_base_url: https://api-actions.giki.earth
+legacy_api_base_url: https://api.gikiactions.com
