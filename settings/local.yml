@@ -37,3 +37,6 @@ sentry_dsn: ""
 
 # Legacy API
 legacy_api_base_url: https://api.gikiactions.com
+
+# Cloudflare Browser Rendering
+cloudflare_account_id: "0a0e6f92decf825364b860e2286ceebf"
