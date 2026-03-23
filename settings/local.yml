@@ -14,6 +14,7 @@ r2_account_id: ""
 r2_endpoint: "http://localhost:4566"
 r2_bucket_assets: "giki-assets"
 r2_bucket_uploads: "giki-uploads"
+r2_region: "us-east-1"
 assets_cdn_url: "http://localhost:4566/giki-assets"
 uploads_host: "http://localhost:4566/giki-uploads"
 
