@@ -14,6 +14,7 @@ r2_account_id: "test-account-id"
 r2_endpoint: "http://localhost:4566"
 r2_bucket_assets: "test-assets"
 r2_bucket_uploads: "test-uploads"
+r2_region: "us-east-1"
 assets_cdn_url: "https://test-assets.example.com"
 uploads_host: ""
 
