@@ -11,12 +11,12 @@ admin_base_url: http://local.gikiactions.com:3112
 
 # Cloudflare R2 (uses LocalStack in dev)
 r2_account_id: ""
-r2_endpoint: "http://localhost:4566"
+r2_endpoint: "http://localhost:3115"
 r2_bucket_assets: "giki-assets"
 r2_bucket_uploads: "giki-uploads"
 r2_region: "us-east-1"
-assets_cdn_url: "http://localhost:4566/giki-assets"
-uploads_host: "http://localhost:4566/giki-uploads"
+assets_cdn_url: "http://localhost:3115/giki-assets"
+uploads_host: "http://localhost:3115/giki-uploads"
 
 # Stripe Configuration
 stripe_publishable_key: pk_test_xxx
