@@ -26,7 +26,7 @@ module GikiConfig
       return nil if Giki.env.production?
       return "http://127.0.0.1:#{ENV['AWS_PORT']}" if Giki.env.test? && ENV['GIKI_CI']
 
-      "http://localhost:3065"
+      "http://localhost:3115"
     end
   end
 end
