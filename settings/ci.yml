@@ -45,3 +45,4 @@ cloudflare_account_id: "0a0e6f92decf825364b860e2286ceebf"
 # Airtable
 airtable_base_id: "appJHsHtDQoVjwBe0"
 airtable_table_id: "tblYUXFx9JiIxToIV"
+airtable_downloadables_table_id: "tblq6eQAum9Bmiz0v"
