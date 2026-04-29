@@ -19,11 +19,11 @@ assets_cdn_url: "http://localhost:3115/giki-assets"
 uploads_host: "http://localhost:3115/giki-uploads"
 
 # Stripe Configuration
-stripe_publishable_key: pk_test_51OZNVJS5x7RKDVEdPu32vbrMNB9U52i0157k2d07GTKsVxgkEXBrCD8HA5bKBT3NPyTmlsoK7SiBBWVHYSBkBc9f00GrVY0EMd
+stripe_publishable_key: pk_test_51TRWPXE4p7ql33LrTJqXtcItOYp5ctEeX9on5s7LjAF4nCUlE2P5PvuQqKI8WgsV42mpLmSaeqhqJ7HxSiL5esVS00S9i3AM0d
 stripe_price_ids:
   premium:
-    monthly: price_1TR38IS5x7RKDVEdtE4ZwB9R
-    annual: price_1TR38aS5x7RKDVEdqelH0743
+    monthly: price_1TRWQoE4p7ql33LrxCAI4HOW
+    annual: price_1TRWQoE4p7ql33LrfCquD7YJ
 
 # Email Configuration
 mail_from_email: noreply@giki.earth
