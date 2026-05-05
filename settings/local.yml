@@ -20,10 +20,8 @@ uploads_host: "http://localhost:3115/giki-uploads"
 
 # Stripe Configuration
 stripe_publishable_key: pk_test_51TRWPXE4p7ql33LrTJqXtcItOYp5ctEeX9on5s7LjAF4nCUlE2P5PvuQqKI8WgsV42mpLmSaeqhqJ7HxSiL5esVS00S9i3AM0d
-stripe_price_ids:
-  premium:
-    monthly: price_1TRWQoE4p7ql33LrxCAI4HOW
-    annual: price_1TRWQoE4p7ql33LrfCquD7YJ
+stripe_premium_monthly_price_id: price_1TRWQoE4p7ql33LrxCAI4HOW
+stripe_premium_annual_price_id: price_1TRWQoE4p7ql33LrfCquD7YJ
 
 # Email Configuration
 mail_from_email: noreply@giki.earth
