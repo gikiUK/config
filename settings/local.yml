@@ -24,15 +24,12 @@ stripe_premium_monthly_price_id: price_1TRWQoE4p7ql33LrxCAI4HOW
 stripe_premium_annual_price_id: price_1TRWQoE4p7ql33LrfCquD7YJ
 
 # Email Configuration
-mail_from_email: noreply@giki.earth
-marketing_from_email: hello@giki.earth
-notifications_from_email: notifications@giki.earth
-support_email: support@giki.earth
+mail_from_email: noreply@gikiactions.com
+marketing_from_email: hello@gikiactions.com
+notifications_from_email: notifications@gikiactions.com
+support_email: info@gikiactions.com
 
-# SES Configuration Sets
-ses_mail_configuration_set: ""
-ses_marketing_configuration_set: ""
-ses_notifications_configuration_set: ""
+# SES (legacy — kept for Giki.ses_client in lib/giki.rb)
 ses_region: eu-west-1
 
 # Sentry Error Tracking (disabled in development)
