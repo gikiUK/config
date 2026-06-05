@@ -1,13 +1,13 @@
 module GikiConfig
   class Environment
-    ALLOWED_ENVS = %(development test production).freeze
+    ALLOWED_ENVS = %w[development test ci production].freeze
     private_constant :ALLOWED_ENVS
 
     def initialize(raw_env)
       @env = raw_env.to_s
 
       unless ALLOWED_ENVS.include?(env)
-        raise Giki::ConfigError, "environment must be one of development, test or production. Got #{env}."
+        raise Giki::ConfigError, "environment must be one of #{ALLOWED_ENVS.join(', ')}. Got #{env}."
       end
     end
 
@@ -37,6 +37,10 @@ module GikiConfig
 
     def test?
       env == "test"
+    end
+
+    def ci?
+      env == "ci"
     end
 
     def production?
