@@ -1,6 +1,6 @@
 module GikiConfig
   class Environment
-    ALLOWED_ENVS = %w(development test ci production).freeze
+    ALLOWED_ENVS = %w[development test ci production].freeze
     private_constant :ALLOWED_ENVS
 
     def initialize(raw_env)
