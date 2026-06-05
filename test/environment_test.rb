@@ -6,6 +6,7 @@ class EnvironmentTest < Minitest::Test
 
     assert env.development?
     refute env.test?
+    refute env.ci?
     refute env.production?
     assert_equal 'development', env.to_s
   end
@@ -15,8 +16,19 @@ class EnvironmentTest < Minitest::Test
 
     refute env.development?
     assert env.test?
+    refute env.ci?
     refute env.production?
     assert_equal 'test', env.to_s
+  end
+
+  def test_ci_environment
+    env = GikiConfig::Environment.new('ci')
+
+    refute env.development?
+    refute env.test?
+    assert env.ci?
+    refute env.production?
+    assert_equal 'ci', env.to_s
   end
 
   def test_production_environment
@@ -24,6 +36,7 @@ class EnvironmentTest < Minitest::Test
 
     refute env.development?
     refute env.test?
+    refute env.ci?
     assert env.production?
     assert_equal 'production', env.to_s
   end
