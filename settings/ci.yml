@@ -3,6 +3,10 @@ aurora_endpoint: localhost
 aurora_port: 5432
 aurora_database_name: giki_test
 
+# Legacy (v1) database — not connected in CI (the migration's Source layer is
+# stubbed in tests); present only so Giki.config.aurora_legacy_database_name resolves.
+aurora_legacy_database_name: giki_legacy_test
+
 # Frontend URL for emails and CORS
 frontend_base_url: http://localhost:3211
 

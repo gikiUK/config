@@ -3,6 +3,10 @@ aurora_endpoint: localhost
 aurora_port: 5432
 aurora_database_name: giki_development
 
+# Legacy (v1) database — restore of the v1 pg_dump, read-only, used by the
+# v1→v2 migration. Same cluster/endpoint as the primary, different database.
+aurora_legacy_database_name: v1_migration_scratch
+
 # Frontend URL for emails and CORS
 frontend_base_url: http://local.gikiactions.com:3111
 
