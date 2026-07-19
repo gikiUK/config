@@ -91,6 +91,7 @@ The environment is determined from (in order):
 - `aurora_endpoint` - RDS cluster endpoint
 - `aurora_port` - Database port
 - `aurora_database_name` - Database name
+- `aurora_legacy_database_name` - Legacy (v1) database name on the same cluster; read-only, consumed by the v1→v2 migration
 
 #### Secrets
 - `aurora_username` - Database username
@@ -99,6 +100,9 @@ The environment is determined from (in order):
 - `ses_smtp_password` - SES SMTP password
 - `ses_smtp_address` - SES SMTP server
 - `ses_smtp_port` - SES SMTP port
+- `v1_encryption_primary_key` - v1 ActiveRecord::Encryption primary key (decrypts v1 emails during migration)
+- `v1_encryption_deterministic_key` - v1 ActiveRecord::Encryption deterministic key
+- `v1_encryption_key_derivation_salt` - v1 ActiveRecord::Encryption key-derivation salt
 
 ## Development
 
