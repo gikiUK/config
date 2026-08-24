@@ -32,6 +32,13 @@ Giki.config.aurora_port          # Database port (usually 5432)
 Giki.config.aurora_database_name # Database name
 ```
 
+### URLs
+```ruby
+Giki.config.frontend_base_url # Public front end, used for links in emails and CORS
+Giki.config.admin_base_url    # Admin app, used for CORS
+Giki.config.api_base_url      # This API, used to build absolute URLs to API-served assets
+```
+
 ### Secrets (Credentials)
 ```ruby
 # Aurora Database
